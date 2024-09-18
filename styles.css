@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'font1'; /* Nombre personalizado de la fuente */
+  src: url('./fonts/Beautiful\ Heart.ttf') format('truetype'); /* Ruta a la fuente descargada */
+  font-weight: normal; /* Opcional: define el peso de la fuente */
+  font-style: normal;  /* Opcional: define el estilo de la fuente */
+}
+
+@font-face {
+  font-family: 'font2'; /* Nombre personalizado de la fuente */
+  src: url('./fonts/PRINC___.TTF') format('truetype'); /* Ruta a la fuente descargada */
+  font-weight: normal; /* Opcional: define el peso de la fuente */
+  font-style: normal;  /* Opcional: define el estilo de la fuente */
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header principal */
+.main-header {
+  width: 100%;
+  padding: 20px;
+  background-color: #b5f8dd;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'font1';
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0.42%;
+}
+
+/* Fondo de pantalla */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ahora el cuerpo crecerá con el contenido */
+  padding-top: 50px; /* Mantén el padding para evitar que el contenido se superponga con el header */
+  background: url('./img/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text_body{
+    max-width: 800px; /* Ancho máximo del bloque de texto */
+    margin: 20px auto; /* Centrar el bloque horizontalmente */
+    text-align: justify; /* Justificar el texto */
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Imagen principal */
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contenido del texto */
+.content {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Contador */
+.contador-container {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(181, 248, 221, 0.3);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.contador-container p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para la sección de búsqueda */
+.search-section {
+  margin: 50px auto;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-section input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #555;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Link de la imagen */
+.presentacion__enlaces{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px; /* Reducir el espacio entre los enlaces */
+}
+
+.presentacion__enlaces__link{
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Reducir el espacio entre las imágenes */
+  width: 40%; /* Reducir el ancho del contenedor si es necesario */
+  text-align: center;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.presentacion__imagen{
+  width: 80px; /* Reducir el tamaño de la imagen */
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+  .main-header {
+    font-size: 2rem;
+  }
+
+  .main-image {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contador-container p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
