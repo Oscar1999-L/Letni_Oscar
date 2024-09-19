@@ -37,7 +37,7 @@ iniciarCuentaRegresiva(fechaObjetivo);
   // Lista de personas con el número de invitados que pueden llevar
 const guestsList = [
   { name: "Leticia Dorantes", totalGuests: 1 },
-  { name: "Layalet Dorantes", totalGuests: 2 },
+  { name: "Layalet Dorantes", totalGuests: 1 },
   { name: "Eugenia Varela", totalGuests: 1 },
   { name: "Yazmin Dorantes", totalGuests: 2 },
   { name: "Gregoria Leal", totalGuests: 1 },
