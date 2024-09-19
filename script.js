@@ -1,30 +1,37 @@
 function iniciarCuentaRegresiva(fechaObjetivo) {
-    const contador = document.getElementById('contador');
-  
-    function actualizarContador() {
-      const ahora = new Date().getTime();
-      const distancia = fechaObjetivo - ahora;
-  
-      if (distancia <= 0) {
-        contador.textContent = "¡El evento ya ha comenzado!";
-        clearInterval(intervalo);
-        return;
-      }
-  
-      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-  
-      contador.textContent = `${dias} d, ${horas} h, ${minutos} m, ${segundos} s`;
+  const contador = document.getElementById('contador');
+
+  function actualizarContador() {
+    const ahora = new Date().getTime();
+    const distancia = fechaObjetivo - ahora;
+
+    if (distancia <= 0) {
+      contador.textContent = "¡El evento ya ha comenzado!";
+      clearInterval(intervalo);
+      return;
     }
-  
-    const intervalo = setInterval(actualizarContador, 1000);
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    // Usar padStart para agregar ceros si el número es menor a 10
+    const formatoDias = dias.toString().padStart(2, '0');
+    const formatoHoras = horas.toString().padStart(2, '0');
+    const formatoMinutos = minutos.toString().padStart(2, '0');
+    const formatoSegundos = segundos.toString().padStart(2, '0');
+
+    contador.textContent = `${formatoDias} d. ${formatoHoras} h. ${formatoMinutos} m. ${formatoSegundos} s.`;
   }
-  
-  // Fecha objetivo: 15 de noviembre de 2024
-  const fechaObjetivo = new Date('November 15, 2024 00:00:00').getTime();
-  iniciarCuentaRegresiva(fechaObjetivo);
+
+  const intervalo = setInterval(actualizarContador, 1000);
+}
+
+// Fecha objetivo: 15 de noviembre de 2024
+const fechaObjetivo = new Date('November 15, 2024 00:00:00').getTime();
+iniciarCuentaRegresiva(fechaObjetivo);
+
   
 
   // Lista de personas con el número de invitados que pueden llevar
