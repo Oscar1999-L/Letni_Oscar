@@ -29,7 +29,7 @@ function iniciarCuentaRegresiva(fechaObjetivo) {
 }
 
 // Fecha objetivo: 15 de noviembre de 2024
-const fechaObjetivo = new Date('November 15, 2024 00:00:00').getTime();
+const fechaObjetivo = new Date('November 15, 2024 17:30:00').getTime();
 iniciarCuentaRegresiva(fechaObjetivo);
 
   
