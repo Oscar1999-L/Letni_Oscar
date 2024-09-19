@@ -13,6 +13,8 @@
   src: url('./fonts/Flipper_Font_New.ttf') format('truetype');
 }
 
+
+
 /* Estilos generales */
 * {
   margin: 0;
@@ -21,18 +23,37 @@
 }
 
 /* Fuentes para títulos y párrafos */
-h1, h2 {
+h1 {
   font-family: 'font1'; /* Fuente para los encabezados */
+}
+
+h2 {
+  font-family: 'font2'; /* Fuente para los encabezados */
 }
 
 p {
   font-family: 'font2'; /* Fuente para los párrafos */
 }
 
-.sub, .sub2 {
-  font-family: 'font1'; /* Asegurar que sub y sub2 también usen la fuente de encabezado */
-  padding: 10px 0 1px 0;
+.sub1 {
+  font-family: 'font4';
+  padding: 10px 10px 1px 10px;
   gap: 12px;
+  font-size: 27px;
+}
+
+.sub2 {
+  font-family: 'font4';
+  padding: 10px 10px 20px 10px;
+  gap: 12px;
+  font-size: 27px;
+}
+
+.sub3 {
+  font-family: 'font4';
+  padding: 35px 10px 1px 10px;
+  gap: 12px;
+  font-size: 27px;
 }
 
 .text_body {
@@ -212,6 +233,10 @@ button:hover {
   height: 100%;
 }
 
+.link{
+  text-decoration: none;
+  color: rgb(211, 13, 13);
+}
 /* Estilos Responsivos */
 @media (max-width: 1024px) {
   .main-header {
@@ -239,3 +264,4 @@ button:hover {
     font-size: 0.9rem;
   }
 }
+
