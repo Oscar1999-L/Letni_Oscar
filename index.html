@@ -5,110 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Letni & Oscar</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
-<header>
-  <h1 class="main-header">Letni & Oscar</h1>
-</header>
-
 <body>
+  <!-- Header principal -->
+  <header class="main-header">
+    <h1 class="main-header">Letni & Oscar</h1>
+  </header>
+
   <div class="container">
     <header>
       <img src="./img/fot2.jpg" alt="Imagen principal" class="main-image">
-      <h1 class="sub2">15/Noviembre/2024</h1>
+      <h2 class="sub2">15/Noviembre/2024</h2>
     </header>
+
     <h2 class="sub">¡El día ha llegado!</h2>
-    <div class="text_body">
-      
-        <p>¡Estamos super felices! Y queremos hacerte parte del nacimiento de nuestra familia, haz sido muy importante para nosotros y por eso queremos hacerte parte de este gran acontecimiento.</p>
-        <p>Mientras llega el gran día hemos creado esta invitación para que estés al tanto de todo lo necesario.</p>
-        
-    </div>
-    <h2>¡Los amamos!</h2>
     
+    <!-- Texto del cuerpo principal -->
+    <div class="text_body">
+      <p>¡Estamos super felices! Y queremos hacerte parte del nacimiento de nuestra familia, haz sido muy importante para nosotros y por eso queremos hacerte parte de este gran acontecimiento.</p>
+      <p>Mientras llega el gran día hemos creado esta invitación para que estés al tanto de todo lo necesario.</p>
+    </div>
+
+    <h2>¡Los amamos!</h2>
+
+    <!-- Sección del contador -->
     <section class="content">
-      
-      <p></p>
-      <p></p>
       <div class="contador-container">
         <p><span class="num_flip" id="contador"></span></p>
       </div>
     </section>
-    <p></p>
-    <p></p>
+
+    <!-- Sección de confirmación de asistencia -->
     <h2 class="sub">¡Confirma tu asistencia!</h2>
-        <div class="text_body">
-          
-          <p>Llena el formulario lo antes posible. En la parte de abajo hay un buscador en donde deberás de anotar tu nombre y apellido para verificar el número de pases que dispones.</p>  
-
-        </div>
-     
-        <div class="search-section">
-          <h2 class="sub1">Busca tu nombre</h2>
-          <input type="text" id="nameInput" placeholder="Introduce tu nombre">
-          <button onclick="searchName()">Buscar</button>
-          <p id="result"></p>
-      </div>
-      
-      <script src="script.js"></script> <!-- Vincula el JavaScript -->
-
-      <div class="text_body">
-        <p>Deseamos tenerte en nuestra celebración y para ello queremos que confirmes 
-          tu asistencia haciendo clic en la imagen con el lápiz, si necesitas hacer un cambio en el número de pases, mándanos mensaje y podremos apoyarte:</p>
-        
-      </div>
-     
-      <div class="presentacion__enlaces">
-        <a class="presentacion__enlaces__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdOMu4SEnp817PXuZXE62N_bPKBvS9OsMeGay8JdnyT85MWmQ/viewform?usp=sf_link" target="_blank">
-        <img class= "presentacion__imagen" src="./img/lapiz.png">
-        </a>
-      </div>
-
-
-      <div class="text_body">
-        <p>Estamos muy emocionados de comenzar nuestra vida juntos y necesitamos de su ayuda.
-          Para esto, hemos creado una lista en Amazon donde puedes enviarnos un regalo o bien, puedes hacernos una transferencia si así es mejor para ti.
-        </p>
-        <p>
-          Solo haz clic en cualquiera de los botonoes y esto te llevará directamente a la información que necesitas.
-        </p>
-        
-      </div>
-      <h2>¡Agradecemos de todo corazón tu apoyo!</h2>
-
-        <div class="presentacion__enlaces">
-          <a class="presentacion__enlaces__link" href="https://www.amazon.com.mx/wedding/registry/1VP2G4PFZFAJP" target="_blank">
-              <img class= "presentacion__imagen" src="./img/amazon.png">
-          </a>
-          <a class="presentacion__enlaces__link" href="./img/Cuenta.pdf" target="_blank">
-              <img class= "presentacion__imagen" src="./img/bbva.png">  
-          </a>
-      </div>
-      
-      <h1 class="sub">¡Te esperamos!</h1>
-      <h2>15/11/2024 a las 17:30 hrs en:</h2>
-      <iframe
-    src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d936.9355482444325!2d-97.03016487146196!3d20.06123844882996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d20.061321799999998!2d-97.0295184!4m3!3m2!1d20.0611957!2d-97.02952119999999!5e0!3m2!1ses-419!2smx!4v1726687034774!5m2!1ses-419!2smx"
-    class="map-responsive"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-
-    
+    <div class="text_body">
+      <p>Llena el formulario lo antes posible. En la parte de abajo hay un buscador en donde deberás de anotar tu nombre y apellido para verificar el número de pases que dispones.</p>  
     </div>
-      
+
+    <!-- Sección de búsqueda -->
+    <div class="search-section">
+      <h2 class="sub1">Busca tu nombre</h2>
+      <input type="text" id="nameInput" placeholder="Introduce tu nombre">
+      <button onclick="searchName()">Buscar</button>
+      <p id="result"></p>
+    </div>
+
+    <!-- Enlace para confirmar asistencia -->
+    <div class="text_body">
+      <p>Deseamos tenerte en nuestra celebración y para ello queremos que confirmes 
+      tu asistencia haciendo clic en la imagen con el lápiz, si necesitas hacer un cambio en el número de pases, mándanos mensaje y podremos apoyarte:</p>
+    </div>
+
+    <div class="presentacion__enlaces">
+      <a class="presentacion__enlaces__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdOMu4SEnp817PXuZXE62N_bPKBvS9OsMeGay8JdnyT85MWmQ/viewform?usp=sf_link" target="_blank">
+        <img class="presentacion__imagen" src="./img/lapiz.png" alt="Confirmar asistencia">
+      </a>
+    </div>
+
+    <!-- Sección de regalos -->
+    <div class="text_body">
+      <p>Estamos muy emocionados de comenzar nuestra vida juntos y necesitamos de su ayuda. Para esto, hemos creado una lista en Amazon donde puedes enviarnos un regalo o bien, puedes hacernos una transferencia si así es mejor para ti.</p>
+      <p>Solo haz clic en cualquiera de los botones y esto te llevará directamente a la información que necesitas.</p>
+    </div>
     
+    <h2>¡Agradecemos de todo corazón tu apoyo!</h2>
 
-    
-      
+    <div class="presentacion__enlaces">
+      <a class="presentacion__enlaces__link" href="https://www.amazon.com.mx/wedding/registry/1VP2G4PFZFAJP" target="_blank">
+        <img class="presentacion__imagen" src="./img/amazon.png" alt="Lista de regalos Amazon">
+      </a>
+      <a class="presentacion__enlaces__link" href="./img/Cuenta.pdf" target="_blank">
+        <img class="presentacion__imagen" src="./img/bbva.png" alt="Transferencia BBVA">
+      </a>
+    </div>
 
-    </div> 
-     
-
+    <!-- Mapa -->
+    <h2>¡Te esperamos!</h2>
+    <h2>15/11/2024 a las 17:30 hrs en:</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d936.9355482444325!2d-97.03016487146196!3d20.06123844882996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d20.061321799999998!2d-97.0295184!4m3!3m2!1d20.0611957!2d-97.02952119999999!5e0!3m2!1ses-419!2smx!4v1726687034774!5m2!1ses-419!2smx"
+      class="map-responsive"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> <!-- Vinculación a tu archivo JavaScript -->
 </body>
 </html>
