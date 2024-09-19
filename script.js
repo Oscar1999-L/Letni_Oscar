@@ -22,7 +22,6 @@ function iniciarCuentaRegresiva(fechaObjetivo) {
     const formatoMinutos = minutos.toString().padStart(2, '0');
     const formatoSegundos = segundos.toString().padStart(2, '0');
 
-    contador.textContent = `Faltan:`;
     contador.textContent = `${formatoDias} d. ${formatoHoras} h. ${formatoMinutos} m. ${formatoSegundos} s.`;
   }
 
