@@ -99,16 +99,15 @@ function searchName() {
   // Busca en la lista
   const guest = guestsList.find(person => person.name.toLowerCase() === nameInput);
 
-  // Muestra el resultado
-  var num_persona = 'persona';
-
-  if (guest.totalGuests > 1){
-      num_persona = 'personas';
-  }
-
   if (guest) {
+      // Verifica si es una o más personas
+      let num_persona = guest.totalGuests > 1 ? 'personas' : 'persona';
+      
+      // Muestra el resultado
       result.innerHTML = `<b>¡Hola ${guest.name}! Invitación para ${guest.totalGuests} ${num_persona}.</b>`;
   } else {
-      result.innerHTML = "Nombre no encontrado en la lista.";
+      // Si no se encontró el nombre
+      result.innerHTML = "<b>Nombre no encontrado en la lista.</b>";
   }
 }
+
