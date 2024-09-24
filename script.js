@@ -107,7 +107,7 @@ function searchName() {
   }
 
   if (guest) {
-      result.innerHTML = `¡Hola ${guest.name}! Invitación para ${guest.totalGuests} ${num_persona}.`;
+      result.innerHTML = `<b>¡Hola ${guest.name}! Invitación para ${guest.totalGuests} ${num_persona}.</b>`;
   } else {
       result.innerHTML = "Nombre no encontrado en la lista.";
   }
