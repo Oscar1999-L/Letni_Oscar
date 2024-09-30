@@ -44,7 +44,7 @@ const guestsList = [
 { name: "Antonio Dorantes", totalGuests: 1 },
 { name: "Candelaria Diaz", totalGuests: 1 },
 { name: "Andrea Dorantes", totalGuests: 2 },
-{ name: "Enrique Dorante", totalGuests: 1 },
+{ name: "Enrique Dorantes", totalGuests: 1 },
 { name: "Leticia Pazos", totalGuests: 2 },
 { name: "Luis Pazos", totalGuests: 3 },
 { name: "Yamilet Pazos", totalGuests: 1 },
