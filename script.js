@@ -68,7 +68,7 @@ const guestsList = [
 { name: "Jose Cabrera", totalGuests: 1 },
 { name: "Herlindo Ramirez", totalGuests: 2 },
 { name: "Mariana Ramirez", totalGuests: 5 },
-{ name: "Familia Castro", totalGuests: 2 },
+{ name: "Matrimonio Castro Amaro", totalGuests: 2 },
 { name: "Roberto Texon", totalGuests: 1 },
 { name: "Florentina Rizo", totalGuests: 1 },
 { name: "Derek Franco", totalGuests: 1 },
