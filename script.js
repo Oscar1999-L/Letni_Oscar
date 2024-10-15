@@ -88,7 +88,8 @@ const guestsList = [
 { name: "Galilea Morales", totalGuests: 2 },
 { name: "Emmanuel Alvarado", totalGuests: 1 },
 { name: "Jafet Figueroa", totalGuests: 4 },
-{ name: "Valeria Segura", totalGuests: 1 }
+{ name: "Valeria Segura", totalGuests: 1 },
+{ name: "John Lebaron", totalGuests: 1 }
 ];
 
 // Función para buscar el nombre en la lista
